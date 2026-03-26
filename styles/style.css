@@ -24,7 +24,7 @@ body{
 /*navbar section*/
 .nav{
     margin-top: 32px;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;  
     text-align: center;
    
@@ -65,10 +65,64 @@ body{
     display:none;
 }
 
+/*tech wave section*/
 
 
+.hero-container {
+    background-image: url(/assets/hero-bg.png);
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    min-height: 60vh;
+  
+    
+}
+.hero-container>div{
+    display: flex;
+    flex-direction: column;
+    width:550px;
+    height: 558px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align:center;
+}
 
+.hero-box{
+   position: relative;
+}
+.hero-circle{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
 
+.hero-mic{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup-btn{
+    background-color:#00FF88;
+    font-weight:600;
+    font-size: 1.15rem;
+    color:#1A0B2E;
+    border-radius: 100px;
+    width: 75px;
+    height: 38px;
+    border: none;
+    position: absolute;
+    left:66px;
+    top:-170px;
+ 
+}
+.hero-text{
+    
+
+}
 
 
 
@@ -93,5 +147,4 @@ body{
     .hamburger{
         display:inline;
     }
-
-}
+} 
