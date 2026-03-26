@@ -23,12 +23,14 @@ body{
 
 /*navbar section*/
 .nav{
-    margin-top: 32px;
     justify-content:space-around;
     align-items: center;  
     text-align: center;
-   
+    padding-top:28px;
+    padding-bottom: 28px;
+    
 }
+
 .nav>div>h1{
     font-weight:800;
     color: white;
@@ -68,41 +70,47 @@ body{
 /*tech wave section*/
 
 
-.hero-container {
-    background-image: url(/assets/hero-bg.png);
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-    min-height: 60vh;
-  
-    
-}
-.hero-container>div{
+    .hero-banner {
+        background-image: url(/assets/hero-bg.png);
+        background-size: cover; 
+        background-position: center; 
+        width:1600px;
+        height: 760px;
+        min-height: 60vh;
+        border-top: 2px solid #cccccc09;
+        
+    }
+
+.hero-container{
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    align-items: center;
     width:550px;
     height: 558px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align:center;
+    margin: 100px auto;
+
 }
 
 .hero-box{
    position: relative;
+   width: 100%;
+
+   
 }
 .hero-circle{
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -131%);
 }
 
 .hero-mic{
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-47%, -213%);
+
 }
 
 .popup-btn{
@@ -115,16 +123,41 @@ body{
     height: 38px;
     border: none;
     position: absolute;
-    left:66px;
-    top:-170px;
- 
+    left: 339px;
+    top: -453px;
 }
-.hero-text{
-    
-
+.tech-text{
+    font-weight: 900;
+    color: white;
+    font-size: 3.85rem;
+    margin-bottom: 8px;
+}
+.tech-p{
+    color: white;
 }
 
-
+.btn2{
+    width: 201px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 100px;
+    background: linear-gradient(30deg, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.btn3{
+    width: 147px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 100px;
+    background:transparent;
+    border:1px solid #00FF88;
+    color:#00FF88;
+    font-weight: 600;
+    margin-top: 24px;
+}
 
 
 
