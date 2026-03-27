@@ -14,9 +14,8 @@
 }
 
 body {
-    max-width: 1600px;
-    margin: 0 auto;
     background-color: #1A0B2E;
+    color: white;
 }
 
 /* Shared */
@@ -208,6 +207,7 @@ body {
     justify-content:space-between ;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-bottom: 120PX;
 
 }
 .podcast-view>div>h1{
@@ -220,6 +220,7 @@ body {
 .podcast-view>div>h5{
     color: white;
     opacity: 80%;
+    
 
 } 
 hr {
@@ -227,6 +228,96 @@ hr {
   border-top:2px solid #cccccc09;
   margin: 80px 0;
 }   
+
+
+
+/* why choose section */
+.why-section{
+    background-color:#230E3D;
+    width: 100%;
+    padding: 120px 10%;
+    text-align: center;
+   
+}
+.why-section>div>h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 40px;
+}
+.why-choose{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 30px;
+    
+}
+.why-choose div:nth-child(1){
+    grid-column:span 4;
+    grid-row:span 8;
+}
+.why-choose div:nth-child(2){
+    grid-column: span 8;
+    grid-row:span 4;
+}
+.why-choose div:nth-child(3){
+    grid-column: span 8;
+    grid-row:span 4;
+}
+.why-choose div:nth-child(4){
+    grid-column: span 8;
+    grid-row:span 4;
+}
+.why-choose div:nth-child(5){
+    grid-column: span 4;
+    grid-row:span 4 ;
+}
+
+.why-card{
+    background-color:rgba(53, 17, 101, 0.4); 
+    padding: 40px;
+    text-align: start;
+    border-radius: 40px;
+    justify-content: center;
+    align-items:start;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.why-card>h5{
+    font-size: 1.50rem;
+    font-weight: 700;
+    color: white;
+
+ 
+}
+
+.why-card>p{
+    color: white;
+    opacity: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -251,6 +342,7 @@ hr {
     .hamburger {
         display: block;
     }
+    
 
     .hero-box {
         height: 220px;
@@ -299,5 +391,19 @@ hr {
     hr {
         margin: 40px 0;
     }
-}
 
+    .why-section>div>h1{
+    font-size: 2rem;
+    
+    margin-bottom: 20px;
+    }
+    .why-choose{
+    grid-template-columns: 1fr;
+    }
+    .why-choose div{
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+    
+
+}
