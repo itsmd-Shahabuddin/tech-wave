@@ -3,6 +3,8 @@
 /* Base */
 .inter-font {
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight:400;
 }
 
 * {
@@ -136,13 +138,14 @@ body {
     font-weight: 900;
     color: white;
     font-size: 3.5rem;
-    margin-top: 40px;
+    margin-top: 90px;
 }
 
 .tech-p {
     color: white;
     margin-top: 8px;
     line-height: 1.5;
+    opacity: 80%;
 }
 
 /* Buttons */
@@ -173,6 +176,60 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
+/* about-container */
+.about-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* padding: 12px 200px 120px 200px; */
+}
+
+.about-container>div>h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color:white;
+    margin-bottom: 16px;
+
+}
+.about-container>div>p{
+    color: white;
+    line-height:30px;
+    opacity: 80%;
+}
+
+
+.about-container>div>p>span{
+   
+    line-height:60px;   
+    
+}
+.podcast-view{
+    justify-content:space-between ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.podcast-view>div>h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+
+.podcast-view>div>h5{
+    color: white;
+    opacity: 80%;
+
+} 
+hr {
+  border: none;
+  border-top:2px solid #cccccc09;
+  margin: 80px 0;
+}   
+
+
+
 
 /* MOBILE */
 
@@ -221,4 +278,26 @@ body {
         width: 100%;
         max-width: 260px;
     }
+      .about-container {
+        padding: 40px 20px;
+    }
+
+    .about-container > div > h1 {
+        font-size: 2rem;
+    }
+
+    .podcast-view {
+       
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .podcast-view > div > h1 {
+        font-size: 2rem;
+    }
+
+    hr {
+        margin: 40px 0;
+    }
 }
+
