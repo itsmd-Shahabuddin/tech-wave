@@ -422,29 +422,54 @@ hr {
 
 }
 
+.footer {
+    background-image: url(/assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 400px;   /* better than fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
 
+.footer > div > div > h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
 
+.footer > div > div > h1 > span {
+    background: linear-gradient(to top, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+}
 
+.footer-links p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
 
+.footer-links img {
+    width: 22px;
+    height: 22px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer > div > p {
+    font-size: 1rem;
+    opacity: 0.6;
+    margin-top: 32px;
+}
 
 
 
@@ -454,8 +479,11 @@ hr {
 
 @media screen and (max-width: 576px) {
 
+
     .nav {
         padding: 15px 20px;
+
+
     }
 
     .nav > ul {
@@ -470,7 +498,7 @@ hr {
     .hamburger {
         display: block;
     }
-    
+
 
     .hero-box {
         height: 220px;
@@ -560,6 +588,8 @@ hr {
     gap:2px;
     margin: 2px;
     }
+
+
      .host-section{ 
     padding: 8px;   
     }
@@ -573,5 +603,26 @@ hr {
         width: 100%;
         height: auto;
      }
+     .footer {
+        padding: 40px 16px;
+        background-size:contain;
+        background-repeat: no-repeat;
+
+        
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .footer > div {
+        padding: 8px;
+    }
+
+    .footer > div > div > h1 {
+        font-size: 2rem;
+    }
 }
+
 
