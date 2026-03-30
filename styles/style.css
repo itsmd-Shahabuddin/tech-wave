@@ -67,7 +67,7 @@ body {
 
 
 .hero-banner {
-    background-image: url(/assets/hero-bg.png);
+    background-image: url('../assets/hero-bg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -432,7 +432,7 @@ hr {
 }
 
 .footer {
-    background-image: url(/assets/footer-bg.png);
+    background-image: url('../assets/footer-bg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
